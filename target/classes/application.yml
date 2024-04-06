@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: admin-service
+  
+  
+  security:
+    user:
+      name: admin
+      password: admin
+  
+  
+  mail:
+    ## Host for the email server
+    host: smtp.gmail.com
+    ## Email server port
+    port: 465
+    username: endava.test.spring.boot@gmail.com
+    ##password: 3Nd4v4T3st$ -> This one is the password for accessing the web interface.
+    password: cnvn zrnr uezp wasd
+    protocol: smtps
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+  
+  boot:
+    admin:
+      notify:
+        mail:
+          ## Comma separated list of email ids to which email notification should be sent
+          to: carlos.marchena@endava.com
+          ## Whether enable email notification or not
+          enabled: true
+    
+
+server:
+  port: 8086
+
+
